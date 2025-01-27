@@ -1,0 +1,10 @@
+set_property SRC_FILE_INFO {cfile:d:/Vivado/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_top_level_0_0/src/base.xdc rfile:../../../led_start.gen/sources_1/bd/led_btn/ip/led_btn_top_level_0_0/src/base.xdc id:1 order:EARLY scoped_inst:U0} [current_design]
+current_instance U0
+set_property src_info {type:SCOPED_XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN Y17 IOSTANDARD LVCMOS33} [get_ports {pwm}]
+set_property src_info {type:SCOPED_XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports {button}]
+set_property src_info {type:SCOPED_XDC file:1 line:27 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN D20 IOSTANDARD LVCMOS33} [get_ports {add]}]
+set_property src_info {type:SCOPED_XDC file:1 line:28 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN L20 IOSTANDARD LVCMOS33} [get_ports {remove}]

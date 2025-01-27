@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../vhdl/spi/FSM_spi.vhd" \
+"../../../../../vhdl/fsm/animation.vhd" \
+"../../../../../vhdl/spi/count_addr.vhd" \
+"../../../../../vhdl/fsm/fsm_animation.vhd" \
+"../../../../../vhdl/fsm/latch2.vhd" \
+"../../../../../vhdl/spi/led_spi.vhd" \
+"../../../../../vhdl/spi/mux.vhd" \
+"../../../../../vhdl/spi/serialisation.vhd" \
+"../../../../../vhdl/top/top_animation.vhd" \
+"../../../../../vhdl/testbench/tb_tp_anim.vhd" \
+
+# Do not sort compile order
+nosort

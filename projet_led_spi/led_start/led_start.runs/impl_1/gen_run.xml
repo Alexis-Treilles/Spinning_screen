@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1737921058">
+  <File Type="ROUTE-PWR" Name="led_btn_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="led_btn_wrapper.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="led_btn_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="led_btn_wrapper_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="led_btn_wrapper_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="led_btn_wrapper.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="led_btn_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="led_btn_wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="led_btn_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="led_btn_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="led_btn_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="led_btn_wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="led_btn_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="led_btn_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="led_btn_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="led_btn_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="led_btn_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="led_btn_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="led_btn_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="led_btn_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="led_btn_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="led_btn_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="led_btn_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="led_btn_wrapper.bin"/>
+  <File Type="PLACE-TIMING" Name="led_btn_wrapper_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="led_btn_wrapper_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="led_btn_wrapper_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="led_btn_wrapper_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="led_btn_wrapper.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="led_btn_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="led_btn_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="led_btn_wrapper_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="led_btn_wrapper.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="led_btn_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="led_btn_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="led_btn_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="led_btn_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="led_btn_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="led_btn_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="led_btn_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="led_btn_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="led_btn_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="led_btn_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="led_btn_wrapper_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="led_btn_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="led_btn_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="led_btn_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="led_btn_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="led_btn_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="led_btn_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="led_btn_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="led_btn_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="led_btn_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="led_btn_wrapper_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="led_btn_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="led_btn_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="animation_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="animation_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="animation_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="animation_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="led_btn_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="animation_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="animation_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="led_btn_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="led_btn_wrapper_bd.bmm"/>
+  <File Type="PDI-FILE" Name="led_btn_wrapper.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="led_btn_wrapper_soc.pdi"/>
+  <File Type="PL-PDI-FILE" Name="led_btn_wrapper_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="led_btn_wrapper.rcfi"/>
+  <File Type="CFI_FILE" Name="led_btn_wrapper.cfi"/>
+  <File Type="RNPI_FILE" Name="led_btn_wrapper.rnpi"/>
+  <File Type="NPI_FILE" Name="led_btn_wrapper.npi"/>
+  <File Type="RBD_FILE" Name="led_btn_wrapper.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="led_btn_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="led_btn_wrapper.sysdef"/>
+  <File Type="BG-BGN" Name="led_btn_wrapper.bgn"/>
+  <File Type="BG-DRC" Name="led_btn_wrapper.drc"/>
+  <File Type="RDI-RDI" Name="led_btn_wrapper.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="led_btn_wrapper_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="led_btn_wrapper_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/led_btn/led_btn.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/led_btn/hdl/led_btn_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/spi/count_addr.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/fsm/fsm_animation.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/fsm/latch2.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/fsm/animation.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/detec_impu/anti_rebond.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/spi/FSM_spi.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/spi/led_spi.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/spi/mux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/spi/serialisation.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/top/top_animation.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/spi/keep_start.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/testbench/tb_animation.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/testbench/tb_tp_anim.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/fsm/counter_led.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/spi/div_freq.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/spi/RS.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/testbench/tb_bascule.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/testbench/tb_fsm_animation.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/testbench/tb_fsm_spi.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/testbench/tb_gestion_horloge.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/testbench/tb_mux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/testbench/tb_p2s.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/testbench/tb_led_spi.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/testbench/tb_keep_start.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vhdl/testbench/tb_anti_rebond.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="led_btn_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/led.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/led_btn_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="led_btn_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="led_btn_animation_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="led_btn_leds_spi_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="led_btn_compteur_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="led_btn_ila_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="led_btn_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="led_btn_c_addsub_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="led_btn_axi_bram_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="led_btn_blk_mem_gen_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="led_btn_top_level_0_0"/>
+</GenRun>

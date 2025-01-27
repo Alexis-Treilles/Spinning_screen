@@ -1,0 +1,1003 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Jan 21 13:43:14 2025
+# Process ID: 17764
+# Current directory: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10968 D:\gogo\Documents\cours\3A\Projet_POV_screen\projet_led_spi\led_start\led_start.xpr
+# Log file: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/vivado.log
+# Journal file: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start\vivado.jou
+# Running On: gogo_pc_port, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 10, Host memory: 16788 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.xpr
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_2'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/fsm'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/detec_impu'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_2'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1242.082 ; gain = 435.191
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_leds_spi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_leds_spi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim/sc_xtlm_led_btn_axi_smc_0.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_13 -L smartconnect_v1_0 -L processing_system7_vip_v1_0_15 -L xilinx_vip -prj tb_leds_spi_vlog.prj"
+"xvhdl --incr --relax -prj tb_leds_spi_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/FSM_spi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM_SPI'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1263.012 ; gain = 8.430
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_leds_spi_behav xil_defaultlib.tb_leds_spi xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_leds_spi_behav xil_defaultlib.tb_leds_spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3353] formal port 'clk_spi' has no actual or default value [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/FSM_spi.vhd:17]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1263.012 ; gain = 8.430
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_leds_spi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_leds_spi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim/sc_xtlm_led_btn_axi_smc_0.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_13 -L smartconnect_v1_0 -L processing_system7_vip_v1_0_15 -L xilinx_vip -prj tb_leds_spi_vlog.prj"
+"xvhdl --incr --relax -prj tb_leds_spi_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/led_spi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'leds_spi'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_leds_spi_behav xil_defaultlib.tb_leds_spi xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_leds_spi_behav xil_defaultlib.tb_leds_spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.FSM_SPI [\FSM_SPI(count_num=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.front_detector [front_detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux3to1 [mux3to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.p2s [p2s_default]
+Compiling architecture behavioral of entity xil_defaultlib.compteur_adr [\compteur_adr(count_max=10,count...]
+Compiling architecture behavioral of entity xil_defaultlib.leds_spi [leds_spi_default]
+Compiling architecture tb of entity xil_defaultlib.tb_leds_spi
+Built simulation snapshot tb_leds_spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_leds_spi_behav -key {Behavioral:sim_1:Functional:tb_leds_spi} -tclbatch {tb_leds_spi.tcl} -protoinst "protoinst_files/bd_fc74.protoinst" -protoinst "protoinst_files/led_btn.protoinst" -view {D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/neopixel_controller_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_fc74.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_fc74.protoinst for the following reason(s):
+There are no instances of module "bd_fc74" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/led_btn.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/led_btn.protoinst for the following reason(s):
+There are no instances of module "led_btn" in the design.
+
+Time resolution is 1 ps
+open_wave_config D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/neopixel_controller_tb_behav.wcfg
+source tb_leds_spi.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_leds_spi_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1360.445 ; gain = 27.934
+run 60 us
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_leds_spi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_leds_spi' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim/sc_xtlm_led_btn_axi_smc_0.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_13 -L smartconnect_v1_0 -L processing_system7_vip_v1_0_15 -L xilinx_vip -prj tb_leds_spi_vlog.prj"
+"xvhdl --incr --relax -prj tb_leds_spi_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/FSM_spi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM_SPI'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1360.445 ; gain = 0.000
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_leds_spi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_leds_spi_behav xil_defaultlib.tb_leds_spi xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_leds_spi_behav xil_defaultlib.tb_leds_spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.FSM_SPI [\FSM_SPI(count_num=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.front_detector [front_detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux3to1 [mux3to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.p2s [p2s_default]
+Compiling architecture behavioral of entity xil_defaultlib.compteur_adr [\compteur_adr(count_max=10,count...]
+Compiling architecture behavioral of entity xil_defaultlib.leds_spi [leds_spi_default]
+Compiling architecture tb of entity xil_defaultlib.tb_leds_spi
+Built simulation snapshot tb_leds_spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_fc74.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_fc74.protoinst for the following reason(s):
+There are no instances of module "bd_fc74" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/led_btn.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/led_btn.protoinst for the following reason(s):
+There are no instances of module "led_btn" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1360.445 ; gain = 0.000
+run 60 us
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_leds_spi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+"xvlog --incr --relax -L axi_vip_v1_1_13 -L smartconnect_v1_0 -L processing_system7_vip_v1_0_15 -L xilinx_vip -prj tb_leds_spi_vlog.prj"
+"xvhdl --incr --relax -prj tb_leds_spi_vhdl.prj"
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/sources_1/bd/led_btn/led_btn.bd]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-1
+Top: led_btn_wrapper
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2089.328 ; gain = 398.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'led_btn_wrapper' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/hdl/led_btn_wrapper.vhd:43]
+INFO: [Synth 8-3491] module 'led_btn' declared at 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:15' bound to instance 'led_btn_i' of component 'led_btn' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/hdl/led_btn_wrapper.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'led_btn' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:48]
+INFO: [Synth 8-3491] module 'led_btn_animation_0_0' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_animation_0_0_stub.vhdl:5' bound to instance 'animation_0' of component 'led_btn_animation_0_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:454]
+INFO: [Synth 8-638] synthesizing module 'led_btn_animation_0_0' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_animation_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'led_btn_axi_bram_ctrl_0_0' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_axi_bram_ctrl_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0' of component 'led_btn_axi_bram_ctrl_0_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:463]
+INFO: [Synth 8-638] synthesizing module 'led_btn_axi_bram_ctrl_0_0' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_axi_bram_ctrl_0_0_stub.vhdl:39]
+INFO: [Synth 8-3491] module 'led_btn_axi_smc_0' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_axi_smc_0_stub.vhdl:5' bound to instance 'axi_smc' of component 'led_btn_axi_smc_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:494]
+INFO: [Synth 8-638] synthesizing module 'led_btn_axi_smc_0' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_axi_smc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'led_btn_blk_mem_gen_0_1' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_blk_mem_gen_0_1_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'led_btn_blk_mem_gen_0_1' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:556]
+INFO: [Synth 8-638] synthesizing module 'led_btn_blk_mem_gen_0_1' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_blk_mem_gen_0_1_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'led_btn_c_addsub_0_0' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_c_addsub_0_0_stub.vhdl:5' bound to instance 'c_addsub_0' of component 'led_btn_c_addsub_0_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:571]
+INFO: [Synth 8-638] synthesizing module 'led_btn_c_addsub_0_0' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_c_addsub_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'led_btn_detec_impu_0_0' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_detec_impu_0_0_stub.vhdl:5' bound to instance 'detec_impu_0' of component 'led_btn_detec_impu_0_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:578]
+INFO: [Synth 8-638] synthesizing module 'led_btn_detec_impu_0_0' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_detec_impu_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'led_btn_xlconstant_0_0' declared at 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_xlconstant_0_0/synth/led_btn_xlconstant_0_0.v:53' bound to instance 'gnd' of component 'led_btn_xlconstant_0_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:584]
+INFO: [Synth 8-6157] synthesizing module 'led_btn_xlconstant_0_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_xlconstant_0_0/synth/led_btn_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'led_btn_xlconstant_0_0' (0#1) [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_xlconstant_0_0/synth/led_btn_xlconstant_0_0.v:53]
+INFO: [Synth 8-3491] module 'led_btn_ila_0_0' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_ila_0_0_stub.vhdl:5' bound to instance 'ila_0' of component 'led_btn_ila_0_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:588]
+INFO: [Synth 8-638] synthesizing module 'led_btn_ila_0_0' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_ila_0_0_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'led_btn_leds_spi_0_0' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_leds_spi_0_0_stub.vhdl:5' bound to instance 'leds_spi_0' of component 'led_btn_leds_spi_0_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:600]
+INFO: [Synth 8-638] synthesizing module 'led_btn_leds_spi_0_0' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_leds_spi_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'led_btn_processing_system7_0_0' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'led_btn_processing_system7_0_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:610]
+INFO: [Synth 8-638] synthesizing module 'led_btn_processing_system7_0_0' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_processing_system7_0_0_stub.vhdl:76]
+INFO: [Synth 8-3491] module 'led_btn_rst_ps7_0_100M_0' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'led_btn_rst_ps7_0_100M_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:678]
+INFO: [Synth 8-638] synthesizing module 'led_btn_rst_ps7_0_100M_0' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/.Xil/Vivado-17764-gogo_pc_port/realtime/led_btn_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'led_btn_gnd_0' declared at 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_gnd_0/synth/led_btn_gnd_0.v:53' bound to instance 'vdd' of component 'led_btn_gnd_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:691]
+INFO: [Synth 8-6157] synthesizing module 'led_btn_gnd_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_gnd_0/synth/led_btn_gnd_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (0#1) [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'led_btn_gnd_0' (0#1) [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_gnd_0/synth/led_btn_gnd_0.v:53]
+INFO: [Synth 8-3491] module 'led_btn_xlslice_0_0' declared at 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_xlslice_0_0/synth/led_btn_xlslice_0_0.v:53' bound to instance 'xlslice_0' of component 'led_btn_xlslice_0_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:695]
+INFO: [Synth 8-6157] synthesizing module 'led_btn_xlslice_0_0' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_xlslice_0_0/synth/led_btn_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'led_btn_xlslice_0_0' (0#1) [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_xlslice_0_0/synth/led_btn_xlslice_0_0.v:53]
+INFO: [Synth 8-256] done synthesizing module 'led_btn' (0#1) [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'led_btn_wrapper' (0#1) [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/hdl/led_btn_wrapper.vhd:43]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'led_btn_i'. This will prevent further optimization [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/hdl/led_btn_wrapper.vhd:73]
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2185.188 ; gain = 494.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2185.188 ; gain = 494.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2185.188 ; gain = 494.852
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_animation_0_0/led_btn_animation_0_0.dcp' for cell 'led_btn_i/animation_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_bram_ctrl_0_0/led_btn_axi_bram_ctrl_0_0.dcp' for cell 'led_btn_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/led_btn_axi_smc_0.dcp' for cell 'led_btn_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_blk_mem_gen_0_1/led_btn_blk_mem_gen_0_1.dcp' for cell 'led_btn_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_c_addsub_0_0/led_btn_c_addsub_0_0.dcp' for cell 'led_btn_i/c_addsub_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_detec_impu_0_0/led_btn_detec_impu_0_0.dcp' for cell 'led_btn_i/detec_impu_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_ila_0_0/led_btn_ila_0_0.dcp' for cell 'led_btn_i/ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_leds_spi_0_0/led_btn_leds_spi_0_0.dcp' for cell 'led_btn_i/leds_spi_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_processing_system7_0_0/led_btn_processing_system7_0_0.dcp' for cell 'led_btn_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_rst_ps7_0_100M_0/led_btn_rst_ps7_0_100M_0.dcp' for cell 'led_btn_i/rst_ps7_0_100M'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.221 . Memory (MB): peak = 2185.188 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 516 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_processing_system7_0_0/led_btn_processing_system7_0_0.xdc] for cell 'led_btn_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_processing_system7_0_0/led_btn_processing_system7_0_0.xdc] for cell 'led_btn_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_processing_system7_0_0/led_btn_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/led_btn_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/led_btn_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_rst_ps7_0_100M_0/led_btn_rst_ps7_0_100M_0_board.xdc] for cell 'led_btn_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_rst_ps7_0_100M_0/led_btn_rst_ps7_0_100M_0_board.xdc] for cell 'led_btn_i/rst_ps7_0_100M/U0'
+Parsing XDC File [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_rst_ps7_0_100M_0/led_btn_rst_ps7_0_100M_0.xdc] for cell 'led_btn_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_rst_ps7_0_100M_0/led_btn_rst_ps7_0_100M_0.xdc] for cell 'led_btn_i/rst_ps7_0_100M/U0'
+Parsing XDC File [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/bd_0/ip/ip_1/bd_fc74_psr_aclk_0_board.xdc] for cell 'led_btn_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/bd_0/ip/ip_1/bd_fc74_psr_aclk_0_board.xdc] for cell 'led_btn_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/bd_0/ip/ip_1/bd_fc74_psr_aclk_0.xdc] for cell 'led_btn_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/bd_0/ip/ip_1/bd_fc74_psr_aclk_0.xdc] for cell 'led_btn_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'led_btn_i/ila_0/U0'
+Finished Parsing XDC File [d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'led_btn_i/ila_0/U0'
+Parsing XDC File [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/constrs_1/new/led.xdc]
+Finished Parsing XDC File [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/constrs_1/new/led.xdc]
+INFO: [Project 1-1714] 14 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2309.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 80 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 80 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 2462.945 ; gain = 772.609
+60 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 2462.945 ; gain = 1102.500
+set_property top leds_spi [current_fileset]
+set_property top_lib xil_defaultlib [current_fileset]
+set_property top_arch Behavioral [current_fileset]
+set_property top_file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/led_spi.vhd [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2504.656 ; gain = 41.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'leds_spi' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/led_spi.vhd:23]
+	Parameter count_num bound to: 10 - type: integer 
+	Parameter count_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FSM_SPI' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/FSM_spi.vhd:5' bound to instance 'FSM_SPI_inst' of component 'FSM_SPI' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/led_spi.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'FSM_SPI' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/FSM_spi.vhd:28]
+	Parameter count_num bound to: 10 - type: integer 
+	Parameter count_width bound to: 8 - type: integer 
+WARNING: [Synth 8-614] signal 'clk_spi' is read in the process but is not in the sensitivity list [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/FSM_spi.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'FSM_SPI' (0#1) [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/FSM_spi.vhd:28]
+INFO: [Synth 8-3491] module 'front_detector' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/keep_start.vhd:4' bound to instance 'front_detector_inst' of component 'front_detector' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/led_spi.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'front_detector' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/keep_start.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'front_detector' (0#1) [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/keep_start.vhd:14]
+INFO: [Synth 8-3491] module 'mux3to1' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/mux.vhd:4' bound to instance 'mux3to1_inst' of component 'mux3to1' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/led_spi.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'mux3to1' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/mux.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'mux3to1' (0#1) [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/mux.vhd:14]
+	Parameter DIV_FACTOR bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'p2s' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/serialisation.vhd:5' bound to instance 'p2s_inst' of component 'p2s' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/led_spi.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'p2s' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/serialisation.vhd:20]
+	Parameter DIV_FACTOR bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'p2s' (0#1) [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/serialisation.vhd:20]
+	Parameter count_max bound to: 10 - type: integer 
+	Parameter count_width bound to: 8 - type: integer 
+	Parameter count_incr bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'compteur_adr' declared at 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/count_addr.vhd:5' bound to instance 'compteur_adr_inst' of component 'compteur_adr' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/led_spi.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'compteur_adr' [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/count_addr.vhd:18]
+	Parameter count_max bound to: 10 - type: integer 
+	Parameter count_width bound to: 8 - type: integer 
+	Parameter count_incr bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'compteur_adr' (0#1) [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/count_addr.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'leds_spi' (0#1) [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/led_spi.vhd:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2599.832 ; gain = 136.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2622.656 ; gain = 159.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2622.656 ; gain = 159.711
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2635.293 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/constrs_1/new/led.xdc]
+WARNING: [Vivado 12-584] No ports matched 'start'. [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/constrs_1/new/led.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/constrs_1/new/led.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Dout_LED'. [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/constrs_1/new/led.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/constrs_1/new/led.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/constrs_1/new/led.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 2635.293 ; gain = 172.348
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_leds_spi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_13 -L smartconnect_v1_0 -L processing_system7_vip_v1_0_15 -L xilinx_vip -prj tb_leds_spi_vlog.prj"
+"xvhdl --incr --relax -prj tb_leds_spi_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_leds_spi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_leds_spi_behav xil_defaultlib.tb_leds_spi xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_leds_spi_behav xil_defaultlib.tb_leds_spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_fc74.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_fc74.protoinst for the following reason(s):
+There are no instances of module "bd_fc74" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/led_btn.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/led_btn.protoinst for the following reason(s):
+There are no instances of module "led_btn" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2635.293 ; gain = 0.000
+run 60 us
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_leds_spi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_13 -L smartconnect_v1_0 -L processing_system7_vip_v1_0_15 -L xilinx_vip -prj tb_leds_spi_vlog.prj"
+"xvhdl --incr --relax -prj tb_leds_spi_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/FSM_spi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM_SPI'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2635.293 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2635.293 ; gain = 0.000
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_leds_spi'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_leds_spi_behav xil_defaultlib.tb_leds_spi xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_leds_spi_behav xil_defaultlib.tb_leds_spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.FSM_SPI [\FSM_SPI(count_num=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.front_detector [front_detector_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux3to1 [mux3to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.p2s [p2s_default]
+Compiling architecture behavioral of entity xil_defaultlib.compteur_adr [\compteur_adr(count_max=10,count...]
+Compiling architecture behavioral of entity xil_defaultlib.leds_spi [leds_spi_default]
+Compiling architecture tb of entity xil_defaultlib.tb_leds_spi
+Built simulation snapshot tb_leds_spi_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_fc74.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_fc74.protoinst for the following reason(s):
+There are no instances of module "bd_fc74" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/led_btn.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/led_btn.protoinst for the following reason(s):
+There are no instances of module "led_btn" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 2635.293 ; gain = 0.000
+run 60 us
+set_property top led_btn_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/utils_1/imports/synth_1/led_btn_wrapper.dcp with file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/synth_1/led_btn_wrapper.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Jan 21 16:21:24 2025] Launched synth_1...
+Run output will be captured here: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/synth_1/runme.log
+[Tue Jan 21 16:21:24 2025] Launched impl_1...
+Run output will be captured here: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.243 . Memory (MB): peak = 2849.691 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 534 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3360.848 ; gain = 20.496
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3360.848 ; gain = 20.496
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3360.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 86 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 80 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 3431.805 ; gain = 582.113
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+write_hw_platform -fixed -force -file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_btn_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_btn_wrapper.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_btn_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2022.2/data/embeddedsw) loading 2 seconds
+write_hw_platform: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 3681.883 ; gain = 209.520
+open_bd_design {D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/sources_1/bd/led_btn/led_btn.bd}
+Reading block design file <D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/sources_1/bd/led_btn/led_btn.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - gnd
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - vdd
+Adding component instance block -- xilinx.com:ip:c_addsub:12.0 - c_addsub_0
+Adding component instance block -- xilinx.com:user:detec_impu:1.0 - detec_impu_0
+Adding component instance block -- xilinx.com:user:animation:1.0 - animation_0
+Adding component instance block -- xilinx.com:user:leds_spi:1.0 - leds_spi_0
+Successfully read diagram <led_btn> from block design file <D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/sources_1/bd/led_btn/led_btn.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 3703.227 ; gain = 2.758
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/fsm'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/detec_impu'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_2'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:leds_spi:1.0 [get_ips  led_btn_leds_spi_0_0] -log ip_upgrade.log
+Upgrading 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/sources_1/bd/led_btn/led_btn.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/led_btn_leds_spi_0_0_synth_1
+
+INFO: [IP_Flow 19-3420] Updated led_btn_leds_spi_0_0 to use current project options
+Wrote  : <D:\gogo\Documents\cours\3A\Projet_POV_screen\projet_led_spi\led_start\led_start.srcs\sources_1\bd\led_btn\led_btn.bd> 
+Wrote  : <D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/sources_1/bd/led_btn/ui/bd_940133a8.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips led_btn_leds_spi_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/sources_1/bd/led_btn/led_btn.bd]
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+INFO: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: SmartConnect led_btn_axi_smc_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: IP led_btn_axi_smc_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /led_btn_axi_smc_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /axi_bram_ctrl_0: PORT /axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /c_addsub_0 A_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /c_addsub_0 A_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /c_addsub_0 B_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /c_addsub_0 B_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+Wrote  : <D:\gogo\Documents\cours\3A\Projet_POV_screen\projet_led_spi\led_start\led_start.srcs\sources_1\bd\led_btn\led_btn.bd> 
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/blk_mem_gen_0/wea'(1) to pin '/axi_bram_ctrl_0/bram_we_a'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/blk_mem_gen_0/wea'(1) to pin '/axi_bram_ctrl_0/bram_we_a'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/sim/led_btn.vhd
+VHDL Output written to : d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/hdl/led_btn_wrapper.vhd
+Exporting to file d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/bd_0/hw_handoff/led_btn_axi_smc_0.hwh
+Generated Hardware Definition File d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/bd_0/synth/led_btn_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block leds_spi_0 .
+Exporting to file d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/hw_handoff/led_btn.hwh
+Generated Hardware Definition File d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.hwdef
+generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 4052.348 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all led_btn_axi_smc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: led_btn_axi_smc_0
+catch { config_ip_cache -export [get_ips -all led_btn_leds_spi_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: led_btn_leds_spi_0_0
+export_ip_user_files -of_objects [get_files D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/sources_1/bd/led_btn/led_btn.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/sources_1/bd/led_btn/led_btn.bd]
+launch_runs led_btn_axi_smc_0_synth_1 led_btn_leds_spi_0_0_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: led_btn_axi_smc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: led_btn_leds_spi_0_0
+[Tue Jan 21 16:28:58 2025] Launched led_btn_axi_smc_0_synth_1, led_btn_leds_spi_0_0_synth_1...
+Run output will be captured here:
+led_btn_axi_smc_0_synth_1: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/led_btn_axi_smc_0_synth_1/runme.log
+led_btn_leds_spi_0_0_synth_1: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/led_btn_leds_spi_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/sources_1/bd/led_btn/led_btn.bd] -directory D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.ip_user_files/sim_scripts -ip_user_files_dir D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.ip_user_files -ipstatic_source_dir D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.cache/compile_simlib/modelsim} {questa=D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.cache/compile_simlib/questa} {riviera=D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.cache/compile_simlib/riviera} {activehdl=D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+validate_bd_design -force
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+INFO: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: SmartConnect led_btn_axi_smc_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: IP led_btn_axi_smc_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /led_btn_axi_smc_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /axi_bram_ctrl_0: PORT /axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /c_addsub_0 A_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /c_addsub_0 A_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /c_addsub_0 B_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /c_addsub_0 B_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+report_ip_status -name ip_status 
+save_bd_design
+Wrote  : <D:\gogo\Documents\cours\3A\Projet_POV_screen\projet_led_spi\led_start\led_start.srcs\sources_1\bd\led_btn\led_btn.bd> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/utils_1/imports/synth_1/led_btn_wrapper.dcp with file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/synth_1/led_btn_wrapper.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/synth_1
+
+reset_run led_btn_axi_smc_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'led_btn.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/blk_mem_gen_0/wea'(1) to pin '/axi_bram_ctrl_0/bram_we_a'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/blk_mem_gen_0/wea'(1) to pin '/axi_bram_ctrl_0/bram_we_a'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/sim/led_btn.vhd
+VHDL Output written to : d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/hdl/led_btn_wrapper.vhd
+Exporting to file d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/bd_0/hw_handoff/led_btn_axi_smc_0.hwh
+Generated Hardware Definition File d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/bd_0/synth/led_btn_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+Exporting to file d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/hw_handoff/led_btn.hwh
+Generated Hardware Definition File d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: led_btn_axi_smc_0
+[Tue Jan 21 16:31:01 2025] Launched led_btn_axi_smc_0_synth_1, synth_1...
+Run output will be captured here:
+led_btn_axi_smc_0_synth_1: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/led_btn_axi_smc_0_synth_1/runme.log
+synth_1: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/synth_1/runme.log
+[Tue Jan 21 16:31:01 2025] Launched impl_1...
+Run output will be captured here: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 4058.184 ; gain = 0.000
+write_hw_platform -fixed -include_bit -force -file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_btn_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_btn_wrapper.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_btn_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4256.719 ; gain = 198.535
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-01:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2025 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 4263.266 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 6214.020 ; gain = 1950.754
+set_property PROGRAM.FILE {D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/impl_1/led_btn_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/impl_1/led_btn_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/impl_1/led_btn_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jan-21 18:50:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jan-21 18:50:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jan-21 18:56:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jan-21 18:56:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jan-21 18:57:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jan-21 18:57:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jan-21 19:02:12
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jan-21 19:02:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/sources_1/bd/led_btn/led_btn.bd}
+delete_bd_objs [get_bd_cells c_addsub_0]
+delete_bd_objs [get_bd_nets animation_0_counter_output] [get_bd_cells animation_0]
+connect_bd_net [get_bd_pins leds_spi_0/counter_output] [get_bd_pins blk_mem_gen_0/addrb]
+WARNING: [BD 41-1306] The connection to interface pin </blk_mem_gen_0/addrb> is being overridden by the user with net </leds_spi_0_counter_output>. This pin will not be connected as a part of interface connection <BRAM_PORTB>.
+startgroup
+connect_bd_net [get_bd_pins leds_spi_0/START] [get_bd_pins detec_impu_0/out_register]
+endgroup
+validate_bd_design
+ERROR: [Common 17-161] Invalid option value '' specified for 'object'.
+ERROR: [BD 41-1273] Error running propagate TCL procedure: ERROR: [Common 17-161] Invalid option value '' specified for 'object'.
+    ::xilinx.com_ip_ila_6.2::propagate Line 95
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+INFO: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: SmartConnect led_btn_axi_smc_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: IP led_btn_axi_smc_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /led_btn_axi_smc_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /axi_bram_ctrl_0: PORT /axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+report_ip_status -name ip_status 
+validate_bd_design -force
+ERROR: [Common 17-161] Invalid option value '' specified for 'object'.
+ERROR: [BD 41-1273] Error running propagate TCL procedure: ERROR: [Common 17-161] Invalid option value '' specified for 'object'.
+    ::xilinx.com_ip_ila_6.2::propagate Line 95
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+INFO: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: SmartConnect led_btn_axi_smc_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: IP led_btn_axi_smc_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /led_btn_axi_smc_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /axi_bram_ctrl_0: PORT /axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property CONFIG.C_NUM_OF_PROBES {7} [get_bd_cells ila_0]
+WARNING: [BD 41-1684] Pin /ila_0/probe7 is now disabled. All connections to this pin have been removed. 
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property CONFIG.C_NUM_OF_PROBES {7} [get_bd_cells ila_0]'
+INFO: [Common 17-17] undo 'startgroup'
+connect_bd_net [get_bd_pins ila_0/probe5] [get_bd_pins gnd/dout]
+validate_bd_design
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+INFO: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: SmartConnect led_btn_axi_smc_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: IP led_btn_axi_smc_0 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] led_btn_axi_smc_0: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /led_btn_axi_smc_0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /axi_bram_ctrl_0: PORT /axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+startgroup
+endgroup
+save_bd_design
+Wrote  : <D:\gogo\Documents\cours\3A\Projet_POV_screen\projet_led_spi\led_start\led_start.srcs\sources_1\bd\led_btn\led_btn.bd> 
+Wrote  : <D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/sources_1/bd/led_btn/ui/bd_940133a8.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.srcs/utils_1/imports/synth_1/led_btn_wrapper.dcp with file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/synth_1/led_btn_wrapper.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/synth_1
+
+reset_run led_btn_ila_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/led_btn_ila_0_0_synth_1
+
+reset_run led_btn_axi_smc_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/led_btn_axi_smc_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'led_btn.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/blk_mem_gen_0/wea'(1) to pin '/axi_bram_ctrl_0/bram_we_a'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/blk_mem_gen_0/addrb'(16) to pin '/leds_spi_0/counter_output'(8) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.vhd
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/blk_mem_gen_0/wea'(1) to pin '/axi_bram_ctrl_0/bram_we_a'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/blk_mem_gen_0/addrb'(16) to pin '/leds_spi_0/counter_output'(8) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/sim/led_btn.vhd
+VHDL Output written to : d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/hdl/led_btn_wrapper.vhd
+Exporting to file d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/bd_0/hw_handoff/led_btn_axi_smc_0.hwh
+Generated Hardware Definition File d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/bd_0/synth/led_btn_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_ila_0_0/led_btn_ila_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+Exporting to file d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/hw_handoff/led_btn.hwh
+Generated Hardware Definition File d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/synth/led_btn.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP led_btn_axi_smc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP led_btn_ila_0_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: led_btn_axi_smc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry ef43f125b2544e55 to dir: d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.cache/ip/2022.2/e/f/ef43f125b2544e55/led_btn_axi_smc_0.dcp to d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/led_btn_axi_smc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/led_btn_axi_smc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.cache/ip/2022.2/e/f/ef43f125b2544e55/led_btn_axi_smc_0_sim_netlist.v to d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/led_btn_axi_smc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/led_btn_axi_smc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.cache/ip/2022.2/e/f/ef43f125b2544e55/led_btn_axi_smc_0_sim_netlist.vhdl to d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/led_btn_axi_smc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/led_btn_axi_smc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.cache/ip/2022.2/e/f/ef43f125b2544e55/led_btn_axi_smc_0_stub.v to d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/led_btn_axi_smc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/led_btn_axi_smc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.cache/ip/2022.2/e/f/ef43f125b2544e55/led_btn_axi_smc_0_stub.vhdl to d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/led_btn_axi_smc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: d:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.gen/sources_1/bd/led_btn/ip/led_btn_axi_smc_0/led_btn_axi_smc_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP led_btn_axi_smc_0, cache-ID = ef43f125b2544e55; cache size = 158.991 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: led_btn_ila_0_0
+config_ip_cache: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 6372.570 ; gain = 0.000
+[Tue Jan 21 19:10:55 2025] Launched led_btn_ila_0_0_synth_1, synth_1...
+Run output will be captured here:
+led_btn_ila_0_0_synth_1: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/led_btn_ila_0_0_synth_1/runme.log
+synth_1: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/synth_1/runme.log
+[Tue Jan 21 19:10:55 2025] Launched impl_1...
+Run output will be captured here: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 6372.570 ; gain = 22.141
+write_hw_platform -fixed -include_bit -force -file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_btn_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_btn_wrapper.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_btn_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 6574.922 ; gain = 202.352
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jan-21 19:22:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jan-21 19:22:52
+ERROR: [Common 17-49] Internal Data Exception: Assertion failed:r:/wall1/workspaces/wall523/sub/HEAD/src/shared/labtools/la/LTDHWProbeUtils.cxx:332:class HDDCProbeData __cdecl LTDHWProbeUtils::getProbeILAData(class HDDCProbeInterface *,class ILAData::AbstractILAData *):sampleCount == bitset.size()
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jan-21 19:23:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jan-21 19:23:10
+ERROR: [Common 17-49] Internal Data Exception: Assertion failed:r:/wall1/workspaces/wall523/sub/HEAD/src/shared/labtools/la/LTDHWProbeUtils.cxx:332:class HDDCProbeData __cdecl LTDHWProbeUtils::getProbeILAData(class HDDCProbeInterface *,class ILAData::AbstractILAData *):sampleCount == bitset.size()
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jan-21 19:23:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jan-21 19:23:17
+ERROR: [Common 17-49] Internal Data Exception: Assertion failed:r:/wall1/workspaces/wall523/sub/HEAD/src/shared/labtools/la/LTDHWProbeUtils.cxx:332:class HDDCProbeData __cdecl LTDHWProbeUtils::getProbeILAData(class HDDCProbeInterface *,class ILAData::AbstractILAData *):sampleCount == bitset.size()
+report_ip_status -name ip_status 
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jan-21 19:23:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jan-21 19:23:46
+ERROR: [Common 17-49] Internal Data Exception: Assertion failed:r:/wall1/workspaces/wall523/sub/HEAD/src/shared/labtools/la/LTDHWProbeUtils.cxx:332:class HDDCProbeData __cdecl LTDHWProbeUtils::getProbeILAData(class HDDCProbeInterface *,class ILAData::AbstractILAData *):sampleCount == bitset.size()
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes led_btn_i/animation_0_start_neopix -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes led_btn_i/animation_0_start_neopix -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jan-21 19:24:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jan-21 19:24:02
+ERROR: [Common 17-49] Internal Data Exception: Assertion failed:r:/wall1/workspaces/wall523/sub/HEAD/src/shared/labtools/la/LTDHWProbeUtils.cxx:332:class HDDCProbeData __cdecl LTDHWProbeUtils::getProbeILAData(class HDDCProbeInterface *,class ILAData::AbstractILAData *):sampleCount == bitset.size()
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes led_btn_i/animation_0_start_neopix -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes led_btn_i/leds_spi_0_clk_spi -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jan-21 19:24:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jan-21 19:24:36
+ERROR: [Common 17-49] Internal Data Exception: Assertion failed:r:/wall1/workspaces/wall523/sub/HEAD/src/shared/labtools/la/LTDHWProbeUtils.cxx:332:class HDDCProbeData __cdecl LTDHWProbeUtils::getProbeILAData(class HDDCProbeInterface *,class ILAData::AbstractILAData *):sampleCount == bitset.size()
+add_wave -into {hw_ila_data_1.wcfg} -radix bin { {led_btn_i/blk_mem_gen_0_doutb} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {led_btn_i/animation_0_start_neopix} {led_btn_i/detec_impu_0_out_register} {led_btn_i/leds_spi_0_clk_spi} {led_btn_i/leds_spi_0_data_spi} }
+add_wave -into {hw_ila_data_1.wcfg} -radix unsigned { {led_btn_i/animation_0_counter_output} {led_btn_i/c_addsub_0_S} {led_btn_i/leds_spi_0_counter_output} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jan-21 19:24:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jan-21 19:24:54
+ERROR: [Common 17-49] Internal Data Exception: Assertion failed:r:/wall1/workspaces/wall523/sub/HEAD/src/shared/labtools/la/LTDHWProbeUtils.cxx:332:class HDDCProbeData __cdecl LTDHWProbeUtils::getProbeILAData(class HDDCProbeInterface *,class ILAData::AbstractILAData *):sampleCount == bitset.size()
+save_wave_config {D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-01:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2025 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/impl_1/led_btn_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/impl_1/led_btn_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.runs/impl_1/led_btn_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+WARNING: Simulation object led_btn_i/animation_0_start_neopix was not found in the design.
+WARNING: Simulation object led_btn_i/animation_0_counter_output was not found in the design.
+WARNING: Simulation object led_btn_i/c_addsub_0_S was not found in the design.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jan-21 19:25:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jan-21 19:25:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property top tb_FSM_SPI [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+save_wave_config {D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/neopixel_controller_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_FSM_SPI'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: "D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim/simulate.log"
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 21 20:11:04 2025...

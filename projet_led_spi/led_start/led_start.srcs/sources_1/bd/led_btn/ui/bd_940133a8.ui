@@ -1,0 +1,81 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.365512",
+   "Default View_TopLeft":"-580,3",
+   "ExpandedHierarchyInLayout":"",
+   "comment_0":"Axi en byte addressable to word addrassable ",
+   "commentid":"comment_0|",
+   "font_comment_0":"10",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 threadsafe
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 2060 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 2060 -y 80 -defaultsOSRD
+preplace port port-id_Dout_LED -pg 1 -lvl 7 -x 2060 -y 950 -defaultsOSRD
+preplace port port-id_start -pg 1 -lvl 0 -x 0 -y 680 -defaultsOSRD
+preplace port port-id_clk_spi -pg 1 -lvl 7 -x 2060 -y 930 -defaultsOSRD
+preplace port port-id_button -pg 1 -lvl 0 -x 0 -y 1250 -defaultsOSRD
+preplace port port-id_pwm -pg 1 -lvl 7 -x 2060 -y 1330 -defaultsOSRD
+preplace port port-id_add -pg 1 -lvl 0 -x 0 -y 1270 -defaultsOSRD
+preplace port port-id_remove -pg 1 -lvl 0 -x 0 -y 1290 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 220 -y 110 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -x 610 -y 390 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 5 -x 1600 -y 140 -defaultsOSRD
+preplace inst animation_0 -pg 1 -lvl 4 -x 1280 -y 780 -defaultsOSRD
+preplace inst leds_spi_0 -pg 1 -lvl 5 -x 1600 -y 980 -defaultsOSRD
+preplace inst compteur_reset_0 -pg 1 -lvl 3 -x 960 -y 660 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -x 960 -y 220 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 2 -x 610 -y 200 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 6 -x 1940 -y 280 -defaultsOSRD
+preplace inst c_addsub_0 -pg 1 -lvl 5 -x 1600 -y 600 -defaultsOSRD
+preplace inst vdd -pg 1 -lvl 5 -x 1600 -y 380 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 6 -x 1940 -y 1140 -defaultsOSRD
+preplace inst gnd -pg 1 -lvl 5 -x 1600 -y 480 -defaultsOSRD
+preplace inst top_level_0 -pg 1 -lvl 5 -x 1600 -y 1250 -defaultsOSRD
+preplace netloc Net 1 0 6 NJ 1250 NJ 1250 NJ 1250 NJ 1250 1410 1350 1790
+preplace netloc animation_0_counter_output 1 4 2 1440 850 1800
+preplace netloc animation_0_start_neopix1 1 4 2 1420 890 1760
+preplace netloc axi_bram_ctrl_0_bram_addr_a 1 3 2 1150J 140 NJ
+preplace netloc axi_bram_ctrl_0_bram_clk_a 1 3 3 NJ 200 NJ 200 N
+preplace netloc axi_bram_ctrl_0_bram_en_a 1 3 3 NJ 260 NJ 260 N
+preplace netloc axi_bram_ctrl_0_bram_we_a 1 3 3 NJ 280 NJ 280 N
+preplace netloc axi_bram_ctrl_0_bram_wrdata_a 1 3 3 NJ 220 NJ 220 N
+preplace netloc blk_mem_gen_0_douta 1 3 3 NJ 240 NJ 240 N
+preplace netloc blk_mem_gen_0_doutb 1 4 2 1450 870 1830
+preplace netloc compteur_reset_0_out_reg 1 3 3 1120 680 NJ 680 1820
+preplace netloc gnd_dout 1 5 1 1820J 400n
+preplace netloc leds_spi_0_SPI_ready 1 3 3 1150 880 NJ 880 1750
+preplace netloc leds_spi_0_clk_spi 1 5 2 1840 930 NJ
+preplace netloc leds_spi_0_counter_output 1 5 1 1800 320n
+preplace netloc leds_spi_0_counter_output1 1 4 2 1450 860 1770
+preplace netloc leds_spi_0_data_spi 1 5 2 1780 950 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 220 430 290 790 570 1150 570 1430 320 1790
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 420 160n
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 4 440 280 800 580 1130 890 1410
+preplace netloc start_1 1 0 6 NJ 680 NJ 680 790 740 1140J 690 NJ 690 1810J
+preplace netloc top_level_0_pwm 1 5 2 1750 1330 NJ
+preplace netloc top_level_0_pwm_value_out 1 5 1 1840 1230n
+preplace netloc top_level_0_state 1 5 1 N 1250
+preplace netloc vdd_dout 1 5 1 NJ 380
+preplace netloc xlslice_0_Dout 1 5 1 1790 140n
+preplace netloc add_1 1 0 5 NJ 1270 NJ 1270 NJ 1270 NJ 1270 NJ
+preplace netloc remove_1 1 0 5 NJ 1290 NJ 1290 NJ 1290 NJ 1290 NJ
+preplace netloc axi_smc_M00_AXI 1 2 1 N 200
+preplace netloc processing_system7_0_DDR 1 1 6 NJ 60 NJ 60 NJ 60 NJ 60 NJ 60 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 6 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 440 120n
+preplace cgraphic comment_0 place right -147 251 textcolor 4 linecolor 3 linewidth 2
+levelinfo -pg 1 0 220 610 960 1280 1600 1940 2060
+pagesize -pg 1 -db -bbox -sgen -100 0 2180 1360
+"
+}
+{
+   """""""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""""":"1",
+   """""""""""""""""""""""""""""da_bram_cntlr_cnt""""""""""""""""""""""""""""":"1",
+   """""""""""""""""""""""""""""da_clkrst_cnt""""""""""""""""""""""""""""":"8",
+   """""""""""""""""""""""""""""da_ps7_cnt""""""""""""""""""""""""""""":"1",
+   """"""""""""""""""""""""""""da_clkrst_cnt"""""""""""""""""""""""""""":"2",
+   """""da_clkrst_cnt""""":"1"
+}
+{
+   "/comment_0":"comment_0"
+}

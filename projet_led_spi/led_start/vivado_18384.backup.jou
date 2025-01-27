@@ -1,0 +1,195 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Dec 18 10:28:50 2024
+# Process ID: 18384
+# Current directory: D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13420 D:\gogo\Documents\cours\3A\projet_led_2_V1.0\projet_led_2\led_start\led_start.xpr
+# Log file: D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/vivado.log
+# Journal file: D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start\vivado.jou
+# Running On: gogo_pc_port, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 10, Host memory: 16788 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.xpr
+update_compile_order -fileset sources_1
+update_files -from_files D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/vhdl/fsm/counter_led.vhd -to_files D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.srcs/sources_1/new/counter_led.vhd -filesets [get_filesets *]
+update_files -from_files D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/vhdl/fsm/fsm_animation.vhd -to_files D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.srcs/sources_1/new/fsm_animation.vhd -filesets [get_filesets *]
+update_files -from_files D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/vhdl/testbench/tb_fsm_animation.vhd -to_files D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.srcs/sources_1/new/tb_fsm_animation.vhd -filesets [get_filesets *]
+ipx::infer_core -vendor xilinx.com -library user -taxonomy /UserIP D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.srcs/sources_1/new
+ipx::edit_ip_in_project -upgrade true -name edit_ip_project -directory D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.tmp d:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.srcs/sources_1/new/component.xml
+ipx::current_core d:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.srcs/sources_1/new/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2
+open_bd_design {D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.srcs/sources_1/bd/led_btn/led_btn.bd}
+validate_bd_design -force
+add_files -norecurse D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/vhdl/testbench/tb_count_obj.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_compteur_obj [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+save_bd_design
+launch_simulation
+open_wave_config D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/neopixel_controller_tb_behav.wcfg
+source tb_compteur_obj.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close [ open D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/vhdl/fsm/animation.vhd w ]
+add_files D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/vhdl/fsm/animation.vhd
+close [ open D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/vhdl/fsm/tb_animation.vhd w ]
+add_files D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/vhdl/fsm/tb_animation.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top animation [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run led_btn_axi_smc_0_synth_1
+launch_runs led_btn_axi_smc_0_synth_1
+wait_on_run led_btn_axi_smc_0_synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_animation [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+save_wave_config {D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/neopixel_controller_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/neopixel_controller_tb_behav.wcfg
+source tb_animation.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+update_files -from_files D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/vhdl/testbench/tb_animation.vhd -to_files D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/vhdl/fsm/tb_animation.vhd -filesets [get_filesets *]
+ipx::infer_core -vendor xilinx.com -library user -taxonomy /UserIP D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/vhdl/fsm
+ipx::edit_ip_in_project -upgrade true -name edit_ip_project -directory D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.tmp d:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/vhdl/fsm/component.xml
+ipx::current_core d:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/vhdl/fsm/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2
+open_bd_design {D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.srcs/sources_1/bd/led_btn/led_btn.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:animation:1.0 animation_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins animation_0/CLOCK]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_addsub:12.0 c_addsub_0
+endgroup
+set_property -dict [list CONFIG.A_Type.VALUE_SRC USER CONFIG.B_Type.VALUE_SRC USER] [get_bd_cells c_addsub_0]
+set_property -dict [list \
+  CONFIG.A_Type {Unsigned} \
+  CONFIG.B_Type {Unsigned} \
+  CONFIG.CE {false} \
+  CONFIG.Latency {1} \
+  CONFIG.Out_Width {16} \
+] [get_bd_cells c_addsub_0]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins c_addsub_0/CLK]
+set_property location {5.5 1486 759} [get_bd_cells c_addsub_0]
+set_property location {5 1513 917} [get_bd_cells animation_0]
+delete_bd_objs [get_bd_nets neopixel_controller_0_next_px_num]
+connect_bd_net [get_bd_pins neopixel_controller_0/next_px_num] [get_bd_pins c_addsub_0/A]
+connect_bd_net [get_bd_pins blk_mem_gen_0/addrb] [get_bd_pins c_addsub_0/S]
+startgroup
+set_property -dict [list \
+  CONFIG.Latency {1} \
+  CONFIG.Out_Width {15} \
+] [get_bd_cells c_addsub_0]
+endgroup
+connect_bd_net [get_bd_pins animation_0/counter_output] [get_bd_pins c_addsub_0/B]
+delete_bd_objs [get_bd_nets anti_rebond_0_out_register]
+connect_bd_net [get_bd_pins detec_impu_0/out_register] [get_bd_pins animation_0/addr_rel]
+delete_bd_objs [get_bd_nets detec_impu_0_out_register]
+connect_bd_net [get_bd_pins detec_impu_0/out_register] [get_bd_pins animation_0/START]
+connect_bd_net [get_bd_pins animation_0/start_neopix] [get_bd_pins neopixel_controller_0/start]
+connect_bd_net [get_bd_pins animation_0/addr_rel] [get_bd_pins neopixel_controller_0/next_px_num]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+validate_bd_design
+validate_bd_design -force
+connect_bd_net [get_bd_pins ila_0/probe2] [get_bd_pins c_addsub_0/S]
+connect_bd_net [get_bd_pins ila_0/probe3] [get_bd_pins animation_0/start_neopix]
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top led_btn_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run led_btn_axi_smc_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_bd_design {D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.srcs/sources_1/bd/led_btn/led_btn.bd}
+startgroup
+set_property CONFIG.C_NUM_OF_PROBES {10} [get_bd_cells ila_0]
+endgroup
+delete_bd_objs [get_bd_nets btn_led_1]
+connect_bd_net [get_bd_ports btn_led] [get_bd_pins detec_impu_0/in_register]
+connect_bd_net [get_bd_pins ila_0/probe4] [get_bd_pins detec_impu_0/out_register]
+connect_bd_net [get_bd_pins ila_0/probe5] [get_bd_pins animation_0/counter_output]
+connect_bd_net [get_bd_pins ila_0/probe6] [get_bd_pins neopixel_controller_0/next_px_num]
+startgroup
+set_property CONFIG.C_NUM_OF_PROBES {7} [get_bd_cells ila_0]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout -routing
+validate_bd_design
+save_bd_design
+reset_run synth_1
+reset_run led_btn_ila_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.runs/impl_1/led_btn_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.runs/impl_1/led_btn_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.runs/impl_1/led_btn_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes led_btn_i/detec_impu_0_out_register -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"led_btn_i/ila_0"}]
+save_wave_config {D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/neopixel_controller_tb_behav.wcfg}
+close_sim
+save_wave_config {D:/gogo/Documents/cours/3A/projet_led_2_V1.0/projet_led_2/led_start/led_start.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

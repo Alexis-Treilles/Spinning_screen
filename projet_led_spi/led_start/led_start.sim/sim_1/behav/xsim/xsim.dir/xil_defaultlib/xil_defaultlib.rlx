@@ -1,0 +1,17 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/led_start/led_start.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,axi_vip_v1_1_13;processing_system7_vip_v1_0_15;smartconnect_v1_0;xilinx_vip,,,,,,
+D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/detec_impu/anti_rebond.vhd,1737719017,vhdl,,,,edge_detector,,,,,,,,
+D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/fsm/animation.vhd,1737708791,vhdl,,,,animation,,,,,,,,
+D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/fsm/fsm_animation.vhd,1737707930,vhdl,,,,fsm_manageur,,,,,,,,
+D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/fsm/latch2.vhd,1737132862,vhdl,,,,decalage,,,,,,,,
+D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/FSM_spi.vhd,1737709834,vhdl,,,,fsm_spi,,,,,,,,
+D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/count_addr.vhd,1737412980,vhdl,,,,compteur_adr,,,,,,,,
+D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/led_spi.vhd,1737709838,vhdl,,,,leds_spi,,,,,,,,
+D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/mux.vhd,1737132864,vhdl,,,,mux3to1,,,,,,,,
+D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/spi/serialisation.vhd,1737408876,vhdl,,,,p2s,,,,,,,,
+D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/testbench/tb_anti_rebond.vhd,1737719405,vhdl,,,,tb_compteur_reset,,,,,,,,
+D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/testbench/tb_tp_anim.vhd,1737376616,vhdl,,,,tb_top_animation_neopixel,,,,,,,,
+D:/gogo/Documents/cours/3A/Projet_POV_screen/projet_led_spi/vhdl/top/top_animation.vhd,1737709545,vhdl,,,,top_animation_neopixel,,,,,,,,
