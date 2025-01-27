@@ -34,7 +34,7 @@ This project focuses on designing and implementing a **rotating LED screen** cap
 - Integration with more advanced animation capabilities.  
 
 ## 🎯 Use Case  
-This project is intended for **exhibitions** and **promotional events** to showcase the innovation and capabilities of the **Electronics Department** of $$**ENSEIRB-MATMECA**.
+This project is intended for **exhibitions** and **promotional events** to showcase the innovation and capabilities of the **Electronics Department** of **ENSEIRB-MATMECA**.
 
 ## 📅 Supervisor  
 - **Pr. C. Jego**
